@@ -62,4 +62,13 @@ public class ArrayListInt
             array = nuevoArray;
         }
     }
+
+    /**
+     * Vacia la colección
+     */
+    public void clear()
+    {
+        // Se vuelve a inicializar el array con 0 elementos
+        array = new int[0];
+    }
 }
