@@ -90,4 +90,20 @@ public class ArrayListInt
         }
         return contieneElemento;
     }
+
+    /**
+     * Devuelve el elemento existente en la posición indicada. 
+     * Si el valor de index no es válido, entonces devuelve -1.
+     */
+    public int get(int index)
+    {
+        // Se crea una variable local para guardar el elemento indicado, inicializandolo en -1 por si
+        // no el index no es un parámetro válido
+        int elementoIndicado = -1;
+        // Si index es válido se asigna a la variable local el contenido de dicho elemento
+        if (index<array.length) {
+            elementoIndicado = array[index];
+        }
+        return elementoIndicado;
+    }
 }
