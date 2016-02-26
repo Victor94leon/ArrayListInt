@@ -144,7 +144,21 @@ public class ArrayListInt
         if (!contieneElemento) {
             index = -1;
         }
-        
         return index;
+    }
+
+    /**
+     * Devuelve true si la lista no contiene elementos
+     */
+    public boolean isEmpty()
+    {
+        // Se crea una variable local booleana inicializada con true
+        boolean listaVacia = true;
+        // Secompueba si el número de elementos en la lista es mayor que 0,
+        // y si es asi se cambia la variable booleana a false
+        if (array.length>0) {
+            listaVacia = false;
+        }
+        return listaVacia;
     }
 }
