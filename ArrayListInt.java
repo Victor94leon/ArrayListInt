@@ -119,4 +119,32 @@ public class ArrayListInt
             array[index] = element;
         }
     }
+
+    /**
+     * Devuelve el indice en el que aparece la primera ocurrencia del elemento especificado
+     * o -1 en caso de que la colección no contenga el elemento especificado.
+     */
+    public int indexOf(int elemento)
+    {
+        // Se crea una variable local booleana para indicar si la lista contiene el elemento
+        boolean contieneElemento = false;
+        // Se crea un indice para recorrer la lista
+        int index = 0; 
+        // Se recorrera la lista mientras el indice sea menor que su tamaño y mientras el elemento buscado no sea true
+        while (index<array.length && !contieneElemento) { 
+            // Si el elemento insertado coincide con alguno de la lista se cambia la variable local booleana a true
+            // y se decrementa en uno el indice para evitarerrores al incrementarlo al final del bucle
+            if (elemento==array[index]) {
+                contieneElemento = true;
+                index--;
+            }
+            index++;
+        }
+        // Si la lista no contiene el elemento devuelve -1
+        if (!contieneElemento) {
+            index = -1;
+        }
+        
+        return index;
+    }
 }
