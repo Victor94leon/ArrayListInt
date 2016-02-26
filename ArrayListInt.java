@@ -161,4 +161,12 @@ public class ArrayListInt
         }
         return listaVacia;
     }
+
+    /**
+     * Devuelve el número de elementos de la colección.
+     */
+    public int size()
+    {
+        return array.length;
+    }
 }
