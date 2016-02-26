@@ -106,4 +106,17 @@ public class ArrayListInt
         }
         return elementoIndicado;
     }
+
+    /**
+     * Reemplaza el elemento en la posición index con el valor de element. 
+     * Si el índice no es válido, no hace nada.
+     */
+    public void set(int index,int element)
+    {
+        // Se comprueba si el index introducido es válido
+        if (index<array.length) {
+            // Si es válido se asigna en su posición de la lista el parámetro elemento
+            array[index] = element;
+        }
+    }
 }
