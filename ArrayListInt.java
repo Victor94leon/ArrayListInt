@@ -71,4 +71,23 @@ public class ArrayListInt
         // Se vuelve a inicializar el array con 0 elementos
         array = new int[0];
     }
+
+    /**
+     * Devuelve true si la colección contiene ese elemento.
+     */
+    public boolean contains(int elemento)
+    {
+        // Se crea una variable local booleana para indicar si la lista contiene el elemento
+        boolean contieneElemento = false;
+        // Se crea un indice para recorrer la lista
+        int index = 0; 
+        // Se recorrera la lista mientras el indice sea menor que su tamaño y mientras el elemento buscado no sea true
+        while (index<array.length && !contieneElemento) {
+            if (elemento==array[index]) {
+                contieneElemento = true;
+            }
+            index++;
+        }
+        return contieneElemento;
+    }
 }
